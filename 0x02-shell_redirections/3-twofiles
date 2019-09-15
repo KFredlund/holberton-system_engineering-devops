@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n +1 /etc/passwd /etc/hosts
+diff -c /etc/passwd /etc/hosts 
