@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times, but after the 9th
+# iteration, displays Holberton School and then Hi on a new line
+i=1
+while [ $i -lt 10 ]
+do
+    if [ $i = 9 ]
+    then
+        echo "Holberton School"
+        echo "Hi"
+    fi
+    i=$(( i + 1 ))
+    echo "Holberton School"
+done
