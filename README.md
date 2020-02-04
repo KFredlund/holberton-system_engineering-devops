@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+# holberton-system_engineering-devops
+# holberton-system_engineering-devops
+# holberton-system_engineering-devops
+# holberton-system_engineering-devops
+=======
 Shell | A series of projects
 
 Reqs:
@@ -20,3 +26,4 @@ You are not allowed to use backticks, &&, || or ;
 
 All your scripts must be executable. Use this command: chmod u+x file. We will see later what it means.
 
+>>>>>>> 26baaf3582563627a90337d34446560a49742cef
