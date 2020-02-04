@@ -5,5 +5,5 @@ for i in *-*
 do
     r_name=${i#*-}
     mv "$i" "$r_name"
-ls -1
 done
+ls -1
