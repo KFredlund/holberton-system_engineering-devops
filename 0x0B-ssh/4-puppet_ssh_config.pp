@@ -2,10 +2,10 @@
 file_line { 'turn_off_pswd':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => 'passwordAuthentication no',
+  line   => 'PasswordAuthentication no',
 }
 file_line { 'identity_file':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => 'identityFile ~/.ssh/holberton',
+  line   => 'IdentityFile ~/.ssh/holberton',
 }
