@@ -1,6 +1,6 @@
 <h1 align="center">0x0C Web Server</h1>
 
-<div align="center"><h2>Learning Objectives:</h2>
+## Learning Objectives:
 > What is the main role of a web server
 >
 > What is a child process
@@ -11,7 +11,7 @@
 >
 > What DNS stands for
 >
-> What is DNS main role</div>
+> What is DNS main role
 
 ### 0-transer_file
 > A bash script that transfers a file from our client to a server
