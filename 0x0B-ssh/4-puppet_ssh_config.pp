@@ -1,6 +1,11 @@
 # SSH client configuration
-sshkey { '~/.ssh/holberton':
+file_line { 'turn_off_pswd':
   ensure => 'present',
-  name   => 'ssh_config',
-  target => '~/.ssh/holberton',
+  path   => '/etc/ssh/ssh_config',
+  line   => 'passwordAuthentication no',
+}
+file_line { 'identity_file':
+  ensure => 'present',
+  path   => '/etc/ssh/ssh_config',
+  line   => 'identityFile ~/.ssh/holberton',
 }
