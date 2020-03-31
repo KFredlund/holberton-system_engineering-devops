@@ -1,7 +1,7 @@
 <h1 align="center">0x0F Load Balancer</h1>
 
 ## Project Goal
-> Improve the web stack so that is redundancy for the web servers. This allows us to be able to accept more traffic by doubling the number of web servers, and makes our infrastructure more reliable.
+> Improve the web stack so that there is redundancy for the web servers. This allows us to be able to accept more traffic by doubling the number of web servers, and makes our infrastructure more reliable.
 
 ### Tasks:
 
