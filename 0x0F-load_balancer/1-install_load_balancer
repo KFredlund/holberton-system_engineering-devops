@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy on lb-01 server
+sudo add-aptrepository ppa:vbernat/haproxy-1.8
+sudo apt-get -y update
+sudo apt-get -y install haproxy
+backend 1134-lb-01 54.227.91.127
+    mode http
+    balance roundrobin
+    option forwardfor
+    http-request set-header X-Forwarded-Port
+    http-request add-header X-Forwarded-Proto http
+    server 1134-web-01  35.231.12.153
+    server 1134-web-02  54.234.188.78
+haproxy -c -f /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
