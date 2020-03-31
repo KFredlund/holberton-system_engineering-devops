@@ -4,6 +4,10 @@
 # shellcheck disable=SC2154
 apt-get -y update
 apt-get -y install nginx
-add_header X-Served-By '35.231.12.153'@'localhost'
-add_header X-Served-By '54.234.188.78'@'localhost'
+'35.231.12.153'@'localhost' {
+	add_header X-Served-By: 1134-web-01
+}
+'54.234.188.78'@'localhost' {
+	add_header X-Served-By: 1134-web-02
+}
 service nginx start
