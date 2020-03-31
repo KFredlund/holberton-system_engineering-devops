@@ -1,0 +1,8 @@
+#!/usr/bin/bash env
+# Debug webstack 1
+sudo apt-get -y update
+sudo apt-get -y install nginx
+server \{
+	listen 80;
+\}
+service nginx start
