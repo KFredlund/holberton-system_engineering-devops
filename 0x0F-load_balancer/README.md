@@ -8,8 +8,8 @@
 #### 0-custom_http_response-header
 > Configure web=02 to be indentical to web-01 and add a custom Nginx response header to be able to track which web server is answering our HTTP requesto, to understand and track the way a load balancer works.
 
-####•1-install_load_balancer
+#### 1-install_load_balancer
 > Install and configure HAproxy on your lb-01 server
 
-####•2-puppet_custom_http_response-header.pp
+#### 2-puppet_custom_http_response-header.pp
 > Automate the creation of a custom HTTP header response with Puppet
