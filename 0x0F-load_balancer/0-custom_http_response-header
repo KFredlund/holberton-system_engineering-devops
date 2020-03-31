@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Configures web-02 to be indentical to web-01 with a custom Nginx
+# response header
+# shellcheck disable=SC2154
+apt-get -y update
+apt-get -y install nginx
+add_header X-Served-By '35.231.12.153'@'localhost'
+add_header X-Served-By '54.234.188.78'@'localhost'
+service nginx start
